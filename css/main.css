@@ -64,6 +64,11 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .mobile-header-thumb {
+    display: none;
+  }
+}
 
 .logo {
   font-family: "Raleway";
@@ -1219,6 +1224,14 @@ header {
   flex-wrap: wrap;
   gap: 15px;
 }
+@media screen and (min-width: 768px) {
+  .work-examples__filter {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+  }
+}
 
 .work-examples__button {
   background: #f5f4fa;
@@ -1245,11 +1258,37 @@ header {
   color: #fff;
 }
 
-.work-examples__list {
+.work-examples__list--mobile {
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
   padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .work-examples__list--mobile {
+    display: none;
+  }
+}
+
+.work-examples__list--tablet {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+@media screen and (max-width: 767px) {
+  .work-examples__list--tablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-examples__list--tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .work-examples__link {
@@ -1260,6 +1299,13 @@ header {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) {
+  .work-examples__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
 .work-examples__item {
   width: 450px;
@@ -1269,9 +1315,20 @@ header {
     max-width: 400px;
   }
 }
+@media screen and (min-width: 768px) {
+  .work-examples__item {
+    width: 354px;
+    height: 440px;
+  }
+}
 
 .work-examples__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .work-examples__item:not(:last-child) {
+    margin: 0;
+  }
 }
 
 .work-examples__block {
@@ -1317,6 +1374,11 @@ header {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .work-examples__text-container {
+    flex-grow: 1;
+  }
 }
 
 .work-examples__text-header {
