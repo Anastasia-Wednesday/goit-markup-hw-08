@@ -26,26 +26,14 @@
             <a lang="en" class="logo" href="index.html"
               ><span class="logo__web-part">Web</span>Studio</a
             >
-            <button
-              class="menu-toggle is-open"
-              type="button"
-              data-menu-open
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
+            <button class="menu-toggle is-open" type="button" data-menu-open>
               <svg width="40px" height="40px">
                 <use class="js-open-menu" href="./images/mobile-menu-icons.svg#icon-menu"></use>
               </svg>
             </button>
           </div>
           <div class="mobile-menu is-hidden" data-menu>
-            <button
-              type="button"
-              class="menu-toggle"
-              data-menu-close
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
+            <button type="button" class="menu-toggle" data-menu-close>
               <svg width="40px" height="40px">
                 <use class="js-close-menu" href="./images/mobile-menu-icons.svg#icon-close"></use>
               </svg>
@@ -211,13 +199,28 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="team__members">
             <li class="member">
-              <img
-                class="member__picture"
-                src="./images/mobile-img/worker1.jpg"
-                srcset="./images/mobile-img/worker1.jpg 1x, ./images/mobile-img/worker1@2x.jpg 2x"
-                alt="image of product designer"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 20vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-img/worker1.jpg    1x,
+                    ./images/desktop-img/worker1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-img/worker1.jpg 1x, ./images/tablet-img/worker1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile-img/worker1.jpg 1x, ./images/mobile-img/worker1@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="work-examples__image"
+                  src="./images/tablet-img/worker1.jpg"
+                  alt="веб-сайт"
+                />
+              </picture>
               <div class="member__text">
                 <p class="member__name">Игорь Демьяненко</p>
                 <p class="member__occupation">Product Designer</p>
@@ -254,13 +257,28 @@
               </div>
             </li>
             <li class="member">
-              <img
-                class="member__picture"
-                src="./images/mobile-img/worker2.jpg"
-                srcset="./images/mobile-img/worker2.jpg 1x, ./images/mobile-img/worker2@2x.jpg 2x"
-                alt="image of frontend developer"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 20vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-img/worker2.jpg    1x,
+                    ./images/desktop-img/worker2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-img/worker2.jpg 1x, ./images/tablet-img/worker2@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile-img/worker2.jpg 1x, ./images/mobile-img/worker2@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="work-examples__image"
+                  src="./images/tablet-img/worker2.jpg"
+                  alt="веб-сайт"
+                />
+              </picture>
               <div class="member__text">
                 <p class="member__name">Ольга Репина</p>
                 <p class="member__occupation">Frontend Developer</p>
@@ -297,13 +315,28 @@
               </div>
             </li>
             <li class="member">
-              <img
-                class="member__picture"
-                src="./images/mobile-img/worker3.jpg"
-                srcset="./images/mobile-img/worker3.jpg 1x, ./images/mobile-img/worker3@2x.jpg 2x"
-                alt="image of marketing specialist"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 20vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-img/worker3.jpg    1x,
+                    ./images/desktop-img/worker3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-img/worker3.jpg 1x, ./images/tablet-img/worker3@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile-img/worker3.jpg 1x, ./images/mobile-img/worker3@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="work-examples__image"
+                  src="./images/tablet-img/worker3.jpg"
+                  alt="веб-сайт"
+                />
+              </picture>
               <div class="member__text">
                 <p class="member__name">Николай Тарасов</p>
                 <p class="member__occupation">Marketing</p>
@@ -340,13 +373,28 @@
               </div>
             </li>
             <li class="member">
-              <img
-                class="member__picture"
-                src="./images/mobile-img/worker4.jpg"
-                srcset="./images/mobile-img/worker4.jpg 1x, ./images/mobile-img/worker4@2x.jpg 2x"
-                alt="image of ui designer"
-                sizes="(max-width: 767px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 20vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-img/worker4.jpg    1x,
+                    ./images/desktop-img/worker4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-img/worker4.jpg 1x, ./images/tablet-img/worker4@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile-img/worker4.jpg 1x, ./images/mobile-img/worker4@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="work-examples__image"
+                  src="./images/tablet-img/worker4.jpg"
+                  alt="веб-сайт"
+                />
+              </picture>
               <div class="member__text">
                 <p class="member__name">Михаил Ермаков</p>
                 <p class="member__occupation">UI Designer</p>
