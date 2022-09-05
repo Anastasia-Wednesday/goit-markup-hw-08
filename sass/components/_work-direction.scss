@@ -1,5 +1,11 @@
 .work-dir {
-  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .work-dir__header {

@@ -1,14 +1,42 @@
+.section-features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .features {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
-.section-features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.features__item {
+  @media screen and (min-width: 768px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .features__icon-container {
@@ -16,35 +44,61 @@
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 30px;
-
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background: $light-background-color;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .features__icon {
-  width: 63.32px;
+  width: 70px;
   height: 70px;
 }
 
+.features__text-thumb {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
 .features__header {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: $secondary-font-color;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .features__text {
+  max-width: 450px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $primary-font-color;
-  width: 270px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
 }
