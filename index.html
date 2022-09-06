@@ -154,39 +154,51 @@
           </ul>
         </div>
       </section>
+
       <section class="work-dir">
         <div class="container">
           <h2 class="work-dir__header">Чем мы занимаемся</h2>
           <ul class="work-dir__list">
             <li class="work-dir__item">
-              <img
-                class="work-dir__img"
-                src="./images/img1.jpg"
-                alt="мужчина работает на планшете"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop-img/img1.jpg 1x, ./images/desktop-img/img1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img class="work-dir__img" src="./images/desktop-img/img1.jpg" alt="веб-сайт" />
+              </picture>
               <div class="work-dir__label">
                 <h2 class="work-dir__text">Десктопные приложения</h2>
               </div>
             </li>
             <li class="work-dir__item">
-              <img
-                class="work-dir__img"
-                src="./images/img2.jpg"
-                alt="женщина с ноутбуком и телефоном"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop-img/img2.jpg 1x, ./images/desktop-img/img2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="work-dir__img"
+                  src="./images/desktop-img/img2.jpg"
+                  alt="женщина с ноутбуком и телефоном"
+                />
+              </picture>
               <div class="work-dir__label">
                 <h2 class="work-dir__text">Мобильные приложения</h2>
               </div>
             </li>
             <li class="work-dir__item">
-              <img
-                class="work-dir__img"
-                src="./images/img3.jpg"
-                alt="цветовая палитра на планшете"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop-img/img3.jpg 1x, ./images/desktop-img/img3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="work-dir__img"
+                  src="./images/desktop-img/img3.jpg"
+                  alt="цветовая палитра на планшете"
+                />
+              </picture>
               <div class="work-dir__label">
                 <h2 class="work-dir__text">Дизайнерские решения</h2>
               </div>

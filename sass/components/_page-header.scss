@@ -15,7 +15,7 @@ header {
   padding-top: 10px;
   margin: 0;
   height: 60px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,7 +93,8 @@ header {
   background-color: #fff;
   z-index: 999;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -227,16 +228,10 @@ header {
   pointer-events: none;
   visibility: hidden;
 
-  transform: translate(-50%, -50%) scale(0.5);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-
   @media screen and (min-width: 768px) {
     opacity: 1;
     pointer-events: all;
     visibility: visible;
-
-    transform: none;
-    transition: none;
   }
 }
 
