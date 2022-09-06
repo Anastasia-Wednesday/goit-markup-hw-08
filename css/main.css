@@ -466,13 +466,14 @@ header {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../../images/tablet-img/hero.jpg) 1x, url(../../images/tablet-img/hero@2x.jpg) 2x);
     max-width: 768px;
     max-height: 400px;
-    padding: 200px 452px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../../images/hero.jpg) 1x, url(../../images/hero@2x.jpg) 2x);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url(../../images/hero.jpg) 1x, url(../../images/hero@2x.jpg) 2x);
   }
@@ -1615,6 +1616,11 @@ header {
 @media screen and (min-width: 480px) {
   .work-examples__item {
     max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-examples__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
